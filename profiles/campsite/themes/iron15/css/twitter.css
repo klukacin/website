@@ -32,3 +32,52 @@
 .retweet-credit .profile.h-card{
     color: #ff841c!important;
 }
+
+/* New style */
+#block-views-tweets-block {
+  width: 550px;
+}
+@media (max-width: 767px) {
+  #block-views-tweets-block {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #block-views-tweets-block {
+    width: 100%;
+    padding-right: 250px;
+  }
+}
+#block-views-tweets-block .view-tweets {
+  margin-top: 10px;
+}
+#block-views-tweets-block .view-tweets li {
+  display: none;
+  color: #000;
+}
+#block-views-tweets-block .view-tweets li.views-row-first {
+  display: block !important;
+}
+#block-views-tweets-block .view-tweets li .views-field-text {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 22px;
+}
+#block-views-tweets-block .view-tweets li .views-field-text a {
+  display: none;
+}
+#block-views-tweets-block .view-tweets li .views-field-text a.twitter-timeline-link {
+  display: inline-block !important;
+}
+#block-views-tweets-block .view-tweets li .views-field-created-time {
+  color: #ff841c;
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 100;
+}
+#block-views-tweets-block .view-tweets li .views-field-created-time em {
+  font-style: normal;
+}
